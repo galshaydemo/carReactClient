@@ -30,7 +30,7 @@ export default function Login() {
         </label>
         <label>
           Password
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="text" value={password} onChange={(e) => setPassword(e.target.value)} />
         </label>
         {error && <p className="error">{error}</p>}
         <button type="submit">Log in</button>
